@@ -157,7 +157,7 @@ a {
 
 /* Search Result CSS */
 
-.search-result-container {
+.events-container {
     width: 85%;
     margin: 0 auto;
 }
@@ -195,6 +195,17 @@ a {
     margin: 0;
 }
 
-.btn.datails {
+.btn.details {
     padding: 16px 0;
+}
+
+
+/* All Events */
+
+.all-events {
+    margin-top: 3.8rem;
+}
+
+.title {
+    font-family: 'Poppins SemiBold', sans-serif;
 }
