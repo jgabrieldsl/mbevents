@@ -1,10 +1,78 @@
+/* Fontes */
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Thin';
+    src: url('./fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}  
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins Regular', sans-serif !important;
     background-color: #f5f5f5;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.padding-header {
+    padding: 15px 0;
+}
+
+.btn {
+    width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    border-radius: 100px !important;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.logo h5 {
+    margin: 0;
+}
+
+.btn.signup {
+    background: #E7415B;
+    border: 1px solid #E7415B;
+    color: white;
+}
+
+.btn.signup:hover {
+    background: #e01e3b;
+    border: 1px solid #e01e3b;
+    color: white;
+}
+
+.btn.login {
+    background-color: transparent;
+    color: rgb(0 0 0);
+    text-align: center;
 }
