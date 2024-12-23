@@ -28,6 +28,7 @@
     font-style: normal;
 }  
 
+/* Initial CSS*/
 body {
     margin: 0;
     padding: 0;
@@ -39,6 +40,10 @@ a {
     text-decoration: none !important;
     color: inherit !important;
 }
+
+/**/
+
+/* Header CSS */
 
 .padding-header {
     padding: 15px 0;
@@ -56,6 +61,7 @@ a {
 }
 
 .logo h5 {
+    font-family: 'Poppins Bold', sans-serif !important;
     margin: 0;
 }
 
@@ -76,3 +82,20 @@ a {
     color: rgb(0 0 0);
     text-align: center;
 }
+
+/**/
+
+
+/* Slide CSS */
+
+.slide {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}   
+.slide img {
+    width: 100%;
+}
+
+/**/ 
+
