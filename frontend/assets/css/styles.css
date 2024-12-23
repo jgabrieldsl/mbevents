@@ -1,29 +1,28 @@
 /* Fontes */
-
 @font-face {
     font-family: 'Poppins Regular';
-    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Bold';
-    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins SemiBold';
-    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Thin';
-    src: url('./fonts/Poppins-Thin.ttf') format('truetype');
+    src: url('../fonts/Poppins-Thin.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }  
@@ -32,7 +31,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins Regular', sans-serif !important;
+    font-family: 'Poppins Regular', sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -61,7 +60,7 @@ a {
 }
 
 .logo h5 {
-    font-family: 'Poppins Bold', sans-serif !important;
+    font-family: 'Poppins SemiBold', sans-serif !important;
     margin: 0;
 }
 
@@ -69,11 +68,12 @@ a {
     background: #E7415B;
     border: 1px solid #E7415B;
     color: white;
+    transition: background-color 0.3s;
 }
 
 .btn.signup:hover {
-    background: #e01e3b;
-    border: 1px solid #e01e3b;
+    background: #d93e51;
+    border: 1px solid #d93e51;
     color: white;
 }
 
@@ -97,5 +97,59 @@ a {
     width: 100%;
 }
 
-/**/ 
+/**/
 
+/* Search CSS */
+
+.search-event {
+    margin-top: -3rem;
+    position: relative;
+}
+.search-container {
+    width: 70%;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10rem;
+    background: #fff;
+}
+
+.search-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 2px solid #E7415B;
+    border-radius: 50px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-content input {
+    border: none;
+    outline: none;
+    padding: 0 10px 0 25px;
+    border-radius: 50px 0px 0 50px;
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+}
+
+.search-content input::placeholder {
+    color: #aaa;
+}
+
+.search-content button {
+    background-color: #f04b5d;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 17px 38px;
+    border-radius: 5rem;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-content button:hover {
+    background-color: #d93e51;
+}
