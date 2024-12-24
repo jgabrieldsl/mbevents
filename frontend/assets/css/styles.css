@@ -247,7 +247,7 @@ footer .container {
 
 /**/
 
-/* Register CSS */
+/* Login & Register CSS */
 
 .account {
     min-height: 100vh;
@@ -346,4 +346,74 @@ footer .container {
     top: 10px;
     left: 10px;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+/**/
+
+/* Event Details CSS */
+
+.event-details {
+    background: #E7415B;
+}
+
+
+.event-details .logo {
+    color: #fff;
+}
+
+.event-details .btn.signup {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000;
+}
+
+.event-details .btn.login {
+    color: #fff;
+}
+
+.event-details section {
+    margin-bottom: 2.5rem;
+}
+
+.ticket-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 2rem;
+    padding: 27px;
+}
+
+.right-info {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Poppins SemiBold', sans-serif;
+    padding: 16px 32px;
+}
+
+.price h4 {
+    margin: 0;
+}
+
+.btn.event {
+    background: #e7415b;
+    color: white;
+}
+
+.btn.event:hover {
+    background: #d93e51;
+    color: white;
+}
+
+.event-details .footer.container {
+    background: #fff;
+    border-radius: 2rem;
+    color: black;
+}
+
+.event-details .logo {
+    color: #E7415B;
 }
