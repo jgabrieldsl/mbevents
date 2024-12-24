@@ -352,26 +352,26 @@ footer .container {
 
 /* Event Details CSS */
 
-.event-details {
+.body-alternate {
     background: #E7415B;
 }
 
 
-.event-details .logo {
+.body-alternate .logo {
     color: #fff;
 }
 
-.event-details .btn.signup {
+.body-alternate .btn.signup {
     background: #ffffff;
     border-color: #ffffff;
     color: #000;
 }
 
-.event-details .btn.login {
+.body-alternate .btn.login {
     color: #fff;
 }
 
-.event-details section {
+.body-alternate section {
     margin-bottom: 2.5rem;
 }
 
@@ -408,17 +408,17 @@ footer .container {
     color: white;
 }
 
-.event-details footer {
+.body-alternate footer {
     margin-top: 0;
 }
 
-.event-details .footer.container {
+.body-alternate .footer.container {
     background: #fff;
     border-radius: 2rem;
     color: black;
 }
 
-.event-details .logo {
+.body-alternate .logo {
     color: #E7415B;
 }
 
@@ -429,3 +429,15 @@ footer .container {
 }
 
 /***/
+
+/* Checkout CSS */
+
+.white {
+    color: white;
+}
+
+.infos {
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+}
