@@ -245,7 +245,7 @@ footer .container {
 
 /* Register CSS */
 
-.register {
+.account {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -270,7 +270,7 @@ footer .container {
     height: 100vh;
 }
 
-.register-img {
+.account-img {
     flex: 2.5;
     position: relative;
     display: flex;
@@ -280,13 +280,13 @@ footer .container {
     box-sizing: border-box;
 }
 
-.register-img img {
+.account-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.register-form {
+.account-form {
     flex: 1;
     background-color: #ffffff;
     display: flex;

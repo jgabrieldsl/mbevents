@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | MB. Events</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <!-- Image 83,25 | Form 16,75 -> Flex 2.5 and 1 -->
+    <section class="account">
+        <div class="container-signup">
+            <div class="account-img">
+                <img src="../assets/images/banner-bg.png" alt="Login Image" srcset="">
+            </div>
+            <div class="account-form">
+                <div class="title mb-4">
+                    <h4>Bem vindo de volta, faça seu login:</h4>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email">Login</label>
+                            <input type="text" name="email" id="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="Senha de acesso" class="form-control">
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <button type="submit" class="btn signup page">Entrar</button>
+                        </div>
+                    </form>
+                    <p>Ainda não tem uma conta? <a href="../register/">Cadastre-se</a></p>                    
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
