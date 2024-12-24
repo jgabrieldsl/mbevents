@@ -381,7 +381,7 @@ footer .container {
     align-items: center;
     background: white;
     border-radius: 2rem;
-    padding: 27px;
+    padding: 2rem;
 }
 
 .right-info {
@@ -408,6 +408,10 @@ footer .container {
     color: white;
 }
 
+.event-details footer {
+    margin-top: 0;
+}
+
 .event-details .footer.container {
     background: #fff;
     border-radius: 2rem;
@@ -416,4 +420,10 @@ footer .container {
 
 .event-details .logo {
     color: #E7415B;
+}
+
+.event-infos {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
 }
