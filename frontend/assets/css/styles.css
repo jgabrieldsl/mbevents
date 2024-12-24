@@ -40,6 +40,10 @@ a {
     color: inherit !important;
 }
 
+p {
+    word-wrap: break-word;
+}
+
 /**/
 
 /* Header CSS */
@@ -335,4 +339,11 @@ footer .container {
 
 .form p a {
     color: #E7415B !important;
+}
+
+.account .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
 }
