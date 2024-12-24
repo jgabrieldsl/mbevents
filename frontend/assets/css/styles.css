@@ -240,3 +240,99 @@ footer .container {
     background: #E7415B;
     border-radius: 2rem;
 }
+
+/**/
+
+/* Register CSS */
+
+.register {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-sgn {
+    width: 100%;
+    height: auto;
+}
+
+.image-signup {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+    background: url(../images/banner-bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.container-signup {
+    display: flex;
+    height: 100vh;
+}
+
+.register-img {
+    flex: 2.5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.register-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-form {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    padding: 5rem;
+  }
+
+.form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    padding: 0.9rem 0.85rem !important;
+    background-color: #F2F2F2 !important;
+    border: none !important;
+}
+
+.form-group label {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.form-group input::placeholder {
+    color: #808080;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.btn.signup.page {
+    width: 100%;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form p a {
+    color: #E7415B !important;
+}
