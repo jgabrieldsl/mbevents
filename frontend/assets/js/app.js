@@ -5,58 +5,9 @@ const events = [
     { id: 3, name: "MB. Labs 2025", image: "./assets/images/card-img.png", link: "./event-details/index.html" }
 ];
 
-// All Events Renderization
-events.forEach (event => {
-    const eventCard = `
-        <div class="col-6">
-            <div class="event-card">
-                <div class="card-header">
-                    <div class="image">
-                        <img src="${event.image}" alt="${event.name}">
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="event-title">
-                            <h5>${event.name}</h5>
-                        </div>
-                        <a href="${event.link + '?id=' + event.id}">
-                            <div class="btn details">Ver detalhes</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>`;
-    document.getElementById("all-events").innerHTML += eventCard;
-});
-
-/* */
-
-/* Search Events */ 
-function renderEvents(searchedEvents, searchValue) {
-    const resultMessage = document.getElementById("result-search-message");
-
-    // Verificação inicial, se searchValue estiver vazio, esconde o code da mensagem
-    if (searchValue) {
-        document.getElementById("search-term").textContent = searchValue; // alterando qualquer texto de search term
-        resultMessage.style.display = "block";
-    } else {
-        resultMessage.style.display = "none";
-    }
-
-    const resultSearchEvents = document.getElementById("result-search-events");
-
-    if (searchedEvents.length === 0) {
-        if (searchValue) {
-            resultSearchEvents.innerHTML = "<p>Nenhum evento encontrado.</p>";
-        }
-        return; // finalizando a função se nenhum evento for encontrado
-    }
-
-    resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
-
-    // Renderiza os eventos filtrados
-    searchedEvents.forEach(event => {
+// Buscar eventos dentro do array e renderizar na tela
+function forEachEvents (eventsArray, idElement) {
+    eventsArray.forEach (event => {
         const eventCard = `
             <div class="col-6">
                 <div class="event-card">
@@ -70,15 +21,47 @@ function renderEvents(searchedEvents, searchValue) {
                             <div class="event-title">
                                 <h5>${event.name}</h5>
                             </div>
-                            <a href="${event.link}">
+                            <a href="${event.link + '?id=' + event.id}">
                                 <div class="btn details">Ver detalhes</div>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div> `;
-        resultSearchEvents.innerHTML += eventCard;
+            </div>`;
+        document.getElementById(idElement).innerHTML += eventCard;
     });
+}
+
+forEachEvents(events, "all-events");
+
+/* */
+
+/* Search Events */ 
+function renderEvents(searchedEvents, searchValue) {
+    const resultMessage = document.getElementById("result-search-message");
+
+    // Verificação inicial, se searchValue estiver vazio, esconde o code da mensagem
+    if (searchValue) {
+        document.getElementById("search-term").textContent = searchValue; // alterando qualquer texto de search term
+        resultMessage.style.display = "block";
+    } else {
+        resultMessage.style.display = "none";
+        return;
+    }
+
+    const resultSearchEvents = document.getElementById("result-search-events");
+
+    if (searchedEvents.length === 0) {
+        if (searchValue) {
+            resultSearchEvents.innerHTML = "<p>Nenhum evento encontrado.</p>";
+        }
+        return; // finalizando a função se nenhum evento for encontrado
+    }
+
+    resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
+
+    forEachEvents(searchedEvents, "result-search-events");
+
 }
 
 function searchEvents() {
