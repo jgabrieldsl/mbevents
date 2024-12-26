@@ -53,6 +53,8 @@ function renderEvents(searchedEvents, searchValue) {
         return; // finalizando a função se nenhum evento for encontrado
     }
 
+    resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
+
     // Renderiza os eventos filtrados
     searchedEvents.forEach(event => {
         const eventCard = `
