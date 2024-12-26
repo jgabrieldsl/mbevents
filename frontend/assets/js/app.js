@@ -5,7 +5,7 @@ const events = [
     { id: 3, name: "MB. Labs 2025", image: "./assets/images/card-img.png", link: "./event-details/index.html" }
 ];
 
-// All Events Search
+// All Events Renderization
 events.forEach (event => {
     const eventCard = `
         <div class="col-6">
@@ -95,3 +95,5 @@ function searchEvents() {
 
 // Chamando a função somente ao clicar no botão
 document.getElementById("search-button").addEventListener("click", searchEvents);
+
+renderEvents([], '');
