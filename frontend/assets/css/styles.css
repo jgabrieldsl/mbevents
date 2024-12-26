@@ -57,7 +57,6 @@ p {
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-weight: bolder;
     border-radius: 100px !important;
     font-size: 16px;
     padding: 16px 32px;
@@ -132,7 +131,7 @@ p {
 .search-content input {
     border: none;
     outline: none;
-    padding: 0 10px 0 25px;
+    padding: 17px 10px 17px 25px;
     border-radius: 50px 0px 0 50px;
     font-size: 16px;
     color: #555;
