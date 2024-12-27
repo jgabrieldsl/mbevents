@@ -1,7 +1,7 @@
 const token = localStorage.getItem('authToken');
 
 const btnCard = `
-    <a href="./register/" id="logoutBtn">
+    <a href="./" id="logoutBtn">
         <div class="btn logout">Logout</div>
     </a>
 `;
