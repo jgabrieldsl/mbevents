@@ -39,6 +39,7 @@ forEachEvents(events, "all-events");
 /* Search Events */ 
 function renderEvents(searchedEvents, searchValue) {
     const resultMessage = document.getElementById("result-search-message");
+    const resultSearchEvents = document.getElementById("result-search-events");
 
     // Verificação inicial, se searchValue estiver vazio, esconde o code da mensagem
     if (searchValue) {
@@ -46,10 +47,11 @@ function renderEvents(searchedEvents, searchValue) {
         resultMessage.style.display = "block";
     } else {
         resultMessage.style.display = "none";
+        resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
         return;
     }
 
-    const resultSearchEvents = document.getElementById("result-search-events");
+    resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
 
     if (searchedEvents.length === 0) {
         if (searchValue) {
@@ -57,8 +59,6 @@ function renderEvents(searchedEvents, searchValue) {
         }
         return; // finalizando a função se nenhum evento for encontrado
     }
-
-    resultSearchEvents.innerHTML = ""; // fix para limpar os eventos anteriores
 
     forEachEvents(searchedEvents, "result-search-events");
 
