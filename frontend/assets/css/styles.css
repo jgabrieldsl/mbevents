@@ -440,3 +440,12 @@ footer .container {
     padding: 2rem;
     border-radius: 2rem;
 }
+
+/* Logout */
+
+.btn.logout {
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    color: white;
+    transition: background-color 0.3s;
+}
